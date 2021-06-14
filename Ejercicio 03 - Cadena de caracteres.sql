@@ -1,0 +1,35 @@
+
+-- HEMOS TRABAJADO CON LITERALES Y CONCATENADO 
+
+
+-- AGREGAR UNA CADENA A LA CONSULTA
+SELECT 
+    'NOMBRE: ', FIRST_NAME
+FROM EMPLOYEES;
+
+
+-- EJEMPLO 01: CONCATENAR CADENA DE UNA CONSULTA
+SELECT
+    'NOMBRE: ' || FIRST_NAME AS "Nombre del Empleado"
+FROM EMPLOYEES;
+
+
+-- EJEMPLO 02: CONCATENAR CADENA DE UNA CONSULTA
+SELECT
+    'NOMBRE: ' || FIRST_NAME || ' ' ||LAST_NAME AS "Nombre del Empleado"
+FROM EMPLOYEES;
+
+
+
+-- PRACTICA
+
+SELECT 
+    'El empleado ' || FIRST_NAME || ' del departamento ' || DEPARTMENT_ID || ' tiene un salario de ' || SALARY AS "DATOS"
+FROM EMPLOYEES;
+
+
+
+
+SELECT
+    'La calle ' || STREET_ADDRESS || ' pertenece a la ciudad: ' || CITY AS "Calle y Ciudad"
+FROM LOCATIONS;
